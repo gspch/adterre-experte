@@ -6,3 +6,5 @@ Données vérifiées sur les pages du ministère des Armées (voir la page Sourc
 Site : https://gspch.github.io/adterre-experte/
 
 Développement : `npm install && npm run dev`. Build : `npm run build`.
+
+Déploiement : GitHub Pages via GitHub Actions.
