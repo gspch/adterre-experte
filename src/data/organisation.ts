@@ -69,7 +69,7 @@ export const brigades: Brigade[] = [
     { nom: '1er RPIMa' }, { nom: '13e RDP' }, { nom: '4e RHFS', lieu: 'Pau' }, { nom: 'CIAE' } ] },
 ]
 
-export type Regiment = { sigle: string; nom: string; garnison: string; brigade: string; devise?: string; fait: string }
+export type Regiment = { sigle: string; nom: string; garnison: string; brigade: string; devise?: string; fait: string; image?: string }
 export const regiments: Regiment[] = [
   { sigle: '1er RI', nom: '1er régiment d\'infanterie', garnison: 'Sarrebourg (Moselle)', brigade: 'BFA', devise: 'Fidèle au passé, exemple pour l\'avenir', fait: 'Héritier des Bandes de Picardie. Équipé du FÉLIN, premier régiment déployé en opérations extérieures avec ce système.' },
   { sigle: '1er RTir', nom: '1er régiment de tirailleurs', garnison: 'Épinal (Vosges)', brigade: '7e BB', devise: 'Toujours le premier', fait: 'Recréé le 1er mai 1994, héritier des tirailleurs nord-africains de 1841. Équipé du VBCI.' },
@@ -79,4 +79,10 @@ export const regiments: Regiment[] = [
   { sigle: '152e RI', nom: '152e régiment d\'infanterie', garnison: 'Colmar (Haut-Rhin)', brigade: '7e BB', devise: 'Ne pas subir !', fait: 'Les « Diables Rouges », surnom donné par les Allemands à l\'Hartmannswillerkopf en 1915. Fourragère de la Légion d\'honneur en 1918.' },
   { sigle: '132e RIC', nom: '132e régiment d\'infanterie cynophile', garnison: 'Suippes (Marne)', brigade: 'BGEN', devise: 'Un contre huit', fait: 'Devenu 132e RIC en 2019, spécialisé dans l\'emploi des chiens militaires.' },
   { sigle: '14e RILP', nom: '14e régiment d\'infanterie et de soutien logistique parachutiste', garnison: 'Toulouse (Haute-Garonne)', brigade: 'BLOG', devise: 'Brave 14, unis comme au front', fait: 'Recréé le 1er juillet 2018, logistique opérationnelle.' },
+  { sigle: '2e REP', nom: '2e régiment étranger de parachutistes', garnison: 'Calvi, camp Raffalli (Haute-Corse)', brigade: '11e BP', devise: 'More Majorum', fait: 'Bataillon créé en 1948 à Sétif, régiment en 1955, installé en Corse depuis 1967. Environ 1 400 légionnaires et cadres. Quatre compagnies de combat spécialisées : urbain, montagne, milieu maritime, arrière.', image: 'Design%20sans%20titre%20%2836%29.png?itok=3khmNWlk' },
+  { sigle: '13e DBLE', nom: '13e demi-brigade de Légion étrangère', garnison: 'Camp du Larzac (depuis l\'été 2016)', brigade: '6e BLB', devise: 'More Majorum', fait: 'Créée en 1940. Environ 1 300 légionnaires et cadres, équipés du Griffon. Bir-Hakeim, El Alamein, puis Djibouti de 1962 à 2011 et les Émirats jusqu\'en 2016.', image: '13-demi-brigade-blinde-legere.jpg?itok=HI02Mluu' },
+  { sigle: '13e RDP', nom: '13e régiment de dragons parachutistes', garnison: 'Martignas-sur-Jalle (Gironde)', brigade: 'CAST', devise: 'Au-delà du possible', fait: 'Régiment de dragons devenu parachutiste en 1952 et régiment de renseignement en 1963. Forces spéciales Terre, spécialisé dans le renseignement d\'origine humaine.', image: '13%20rdp.png?h=d1cb525d&itok=07YgkuWE' },
+  { sigle: '1er RCP', nom: '1er régiment de chasseurs parachutistes', garnison: 'Pamiers (Ariège)', brigade: '11e BP', fait: 'Créé en 1943 à Fès, plus ancien régiment parachutiste français. 55 parachutistes tués dans l\'attentat de Beyrouth en 1983. Équipé du Serval depuis 2023.', image: 'Design%20sans%20titre%20%2817%29.png' },
+  { sigle: '1er REC', nom: '1er régiment étranger de cavalerie', garnison: 'Camp de Carpiagne, Aubagne (Bouches-du-Rhône)', brigade: '6e BLB', fait: 'Créé en 1921 à Sousse. Seul régiment de cavalerie de la Légion spécialisé dans le combat blindé. Équipé du Jaguar, de l\'AMX 10 RC-R, du Griffon et du MMP.' },
+  { sigle: '1er RHC', nom: '1er régiment d\'hélicoptères de combat', garnison: 'Phalsbourg, camp de la Horie (Moselle)', brigade: '4e BAC', devise: 'Primus primorum', fait: 'Environ 850 militaires et 200 réservistes. 18 Caïman, 12 Tigre et 9 Gazelle, 4 simulateurs.', image: '1rhc.png' },
 ]
