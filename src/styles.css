@@ -1,6 +1,33 @@
 @import "tailwindcss";
-@theme {
-  --color-fond: #f1eee3; --color-encre: #1d2419; --color-kaki: #374a2f; --color-sable: #d9d2b8; --color-rouille: #8a3b1c;
-  --font-sans: ui-sans-serif, system-ui, sans-serif; --font-serif: Georgia, serif;
+
+/* Design "document d'état-major" repris de la version Lovable : kaki, sable, graphite. */
+@theme inline {
+  --radius-sm: 0.15rem; --radius-md: 0.25rem; --radius-lg: 0.3rem;
+  --color-background: var(--background); --color-foreground: var(--foreground);
+  --color-card: var(--card); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent); --color-border: var(--border); --color-sand: var(--sand); --color-graphite: var(--graphite);
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
-body { background: var(--color-fond); color: var(--color-encre); font-family: var(--font-sans); }
+:root {
+  --background: oklch(0.962 0.012 88); --foreground: oklch(0.245 0.012 100);
+  --card: oklch(0.985 0.008 88);
+  --primary: oklch(0.415 0.052 124); --primary-foreground: oklch(0.975 0.012 88);
+  --secondary: oklch(0.912 0.018 90); --muted: oklch(0.918 0.014 90); --muted-foreground: oklch(0.487 0.018 100);
+  --accent: oklch(0.585 0.105 72); --border: oklch(0.858 0.018 90);
+  --sand: oklch(0.932 0.026 86); --graphite: oklch(0.285 0.008 100);
+  --grid-line: oklch(0.245 0.012 100 / 6%);
+}
+@layer base {
+  * { border-color: var(--color-border); }
+  body { background-color: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spacing: 0.01em; }
+}
+@utility stencil { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.14em; }
+@utility field-grid {
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+@utility rule-label { font-family: var(--font-mono); font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--color-muted-foreground); }

@@ -54,7 +54,7 @@ export const brigades: Brigade[] = [
   { id: 'bgen', nom: 'Brigade du génie (BGEN)', type: 'Spécialisée', resume: 'Génie de l\'armée de Terre.', unites: [
     { nom: '2e RD', note: 'NRBC' }, { nom: '31e RG' }, { nom: '19e RG' }, { nom: '28e GG', lieu: 'Haguenau' }, { nom: '132e RIC', lieu: 'Suippes' } ] },
   { id: 'blog', nom: 'Brigade logistique (BLOG)', type: 'Spécialisée', resume: 'Sous le commandement de la CALT.', unites: [
-    { nom: '14e RILP', lieu: 'Toulouse' }, { nom: 'RMED' }, { nom: '519e RT', lieu: 'Lille' }, { nom: '516e RT', lieu: 'Toul' },
+    { nom: '14e RILP', lieu: 'Toulouse' }, { nom: 'RMED' }, { nom: '519e RT', lieu: 'Toulon' }, { nom: '516e RT', lieu: 'Toul' },
     { nom: '515e RT', lieu: 'La Braconne' }, { nom: '511e RT', lieu: 'Auxonne' }, { nom: '503e RT' }, { nom: '121e RT', lieu: 'Montlhéry' } ] },
   { id: 'bmaint', nom: 'Brigade de maintenance (BMAINT)', type: 'Spécialisée', resume: 'Environ 5 400 personnels.', unites: [
     { nom: '2e RMAT' }, { nom: '3e RMAT' }, { nom: '4e RMAT' }, { nom: '6e RMAT' }, { nom: '7e RMAT' }, { nom: '8e RMAT' } ] },
@@ -67,22 +67,4 @@ export const brigades: Brigade[] = [
     { nom: 'CENTAC, 1er BCP' }, { nom: 'CAPCIA, 51e RI', lieu: 'Mourmelon, Suippes' }, { nom: 'CNEC, 1er choc' }, { nom: 'CECPC', lieu: 'Mailly' } ] },
   { id: 'cast', nom: 'CAST : actions spéciales Terre', type: 'Spécialisée', resume: 'Forces spéciales terrestres.', unites: [
     { nom: '1er RPIMa' }, { nom: '13e RDP' }, { nom: '4e RHFS', lieu: 'Pau' }, { nom: 'CIAE' } ] },
-]
-
-export type Regiment = { sigle: string; nom: string; garnison: string; brigade: string; devise?: string; fait: string; image?: string }
-export const regiments: Regiment[] = [
-  { sigle: '1er RI', nom: '1er régiment d\'infanterie', garnison: 'Sarrebourg (Moselle)', brigade: 'BFA', devise: 'Fidèle au passé, exemple pour l\'avenir', fait: 'Héritier des Bandes de Picardie. Équipé du FÉLIN, premier régiment déployé en opérations extérieures avec ce système.' },
-  { sigle: '1er RTir', nom: '1er régiment de tirailleurs', garnison: 'Épinal (Vosges)', brigade: '7e BB', devise: 'Toujours le premier', fait: 'Recréé le 1er mai 1994, héritier des tirailleurs nord-africains de 1841. Équipé du VBCI.' },
-  { sigle: '16e BCP', nom: '16e bataillon de chasseurs à pied', garnison: 'Bitche (Moselle)', brigade: '2e BB', fait: 'Bataillon depuis 1854, surnommé « bataillon d\'Acier » en 1914. Équipé du VBCI et du FÉLIN.' },
-  { sigle: '35e RI', nom: '35e régiment d\'infanterie', garnison: 'Belfort (Territoire de Belfort)', brigade: '7e BB', devise: 'Tous Gaillards, pas d\'trainards', fait: 'Régiment de 1604, implanté à Belfort depuis 1873, VBCI depuis 2008, environ 1 200 militaires.' },
-  { sigle: '92e RI', nom: '92e régiment d\'infanterie', garnison: 'Clermont-Ferrand (Puy-de-Dôme)', brigade: '2e BB', devise: 'Debout soldats d\'Auvergne, debout ça va barder !', fait: 'Numéro 92 attribué en 1790. Premier régiment VBCI engagé au Mali en 2013 (opération Serval).' },
-  { sigle: '152e RI', nom: '152e régiment d\'infanterie', garnison: 'Colmar (Haut-Rhin)', brigade: '7e BB', devise: 'Ne pas subir !', fait: 'Les « Diables Rouges », surnom donné par les Allemands à l\'Hartmannswillerkopf en 1915. Fourragère de la Légion d\'honneur en 1918.' },
-  { sigle: '132e RIC', nom: '132e régiment d\'infanterie cynophile', garnison: 'Suippes (Marne)', brigade: 'BGEN', devise: 'Un contre huit', fait: 'Devenu 132e RIC en 2019, spécialisé dans l\'emploi des chiens militaires.' },
-  { sigle: '14e RILP', nom: '14e régiment d\'infanterie et de soutien logistique parachutiste', garnison: 'Toulouse (Haute-Garonne)', brigade: 'BLOG', devise: 'Brave 14, unis comme au front', fait: 'Recréé le 1er juillet 2018, logistique opérationnelle.' },
-  { sigle: '2e REP', nom: '2e régiment étranger de parachutistes', garnison: 'Calvi, camp Raffalli (Haute-Corse)', brigade: '11e BP', devise: 'More Majorum', fait: 'Bataillon créé en 1948 à Sétif, régiment en 1955, installé en Corse depuis 1967. Environ 1 400 légionnaires et cadres. Quatre compagnies de combat spécialisées : urbain, montagne, milieu maritime, arrière.', image: 'Design%20sans%20titre%20%2836%29.png?itok=3khmNWlk' },
-  { sigle: '13e DBLE', nom: '13e demi-brigade de Légion étrangère', garnison: 'Camp du Larzac (depuis l\'été 2016)', brigade: '6e BLB', devise: 'More Majorum', fait: 'Créée en 1940. Environ 1 300 légionnaires et cadres, équipés du Griffon. Bir-Hakeim, El Alamein, puis Djibouti de 1962 à 2011 et les Émirats jusqu\'en 2016.', image: '13-demi-brigade-blinde-legere.jpg?itok=HI02Mluu' },
-  { sigle: '13e RDP', nom: '13e régiment de dragons parachutistes', garnison: 'Martignas-sur-Jalle (Gironde)', brigade: 'CAST', devise: 'Au-delà du possible', fait: 'Régiment de dragons devenu parachutiste en 1952 et régiment de renseignement en 1963. Forces spéciales Terre, spécialisé dans le renseignement d\'origine humaine.', image: '13%20rdp.png?h=d1cb525d&itok=07YgkuWE' },
-  { sigle: '1er RCP', nom: '1er régiment de chasseurs parachutistes', garnison: 'Pamiers (Ariège)', brigade: '11e BP', fait: 'Créé en 1943 à Fès, plus ancien régiment parachutiste français. 55 parachutistes tués dans l\'attentat de Beyrouth en 1983. Équipé du Serval depuis 2023.', image: 'Design%20sans%20titre%20%2817%29.png' },
-  { sigle: '1er REC', nom: '1er régiment étranger de cavalerie', garnison: 'Camp de Carpiagne, Aubagne (Bouches-du-Rhône)', brigade: '6e BLB', fait: 'Créé en 1921 à Sousse. Seul régiment de cavalerie de la Légion spécialisé dans le combat blindé. Équipé du Jaguar, de l\'AMX 10 RC-R, du Griffon et du MMP.' },
-  { sigle: '1er RHC', nom: '1er régiment d\'hélicoptères de combat', garnison: 'Phalsbourg, camp de la Horie (Moselle)', brigade: '4e BAC', devise: 'Primus primorum', fait: 'Environ 850 militaires et 200 réservistes. 18 Caïman, 12 Tigre et 9 Gazelle, 4 simulateurs.', image: '1rhc.png' },
 ]
